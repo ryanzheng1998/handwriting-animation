@@ -4,15 +4,14 @@ import Clipping from './Clipping'
 
 const CharPath: React.FC = () => {
     const strokes = rawData.path.map((val, index) => (
-      <>
+      <g key={index}>
         <path
-          key={index}
           mask={`url(#mask${index})`}
           d={val}
           id={`stroke${index}`}
         />
         <Clipping index={index} />
-      </>
+      </g>
     ))
 
     return (

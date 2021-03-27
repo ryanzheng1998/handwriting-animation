@@ -1,12 +1,6 @@
 import React from 'react'
-import { Motion, PlainStyle, presets, spring } from 'react-motion'
-import Clipping from './Clipping'
+import { Motion, PlainStyle, spring } from 'react-motion'
 import rawData from '../assets/name.json'
-
-interface State {
-    currentStroke: number,
-
-}
 
 
 const Mask: React.FC = () => {
