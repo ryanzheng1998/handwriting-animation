@@ -2,15 +2,19 @@ import React from 'react'
 import { Motion, PlainStyle, spring } from 'react-motion'
 import rawData from '../assets/name.json'
 
+interface Props {
+    currentStroke: number;
+    setCurrentStroke: React.Dispatch<React.SetStateAction<number>>;
+}
 
-const Mask: React.FC = () => {
-    const [currentStroke, setCurrentStroke] = React.useState(0)
+
+const Mask: React.FC<Props> = ({currentStroke, setCurrentStroke}) => {
 
     const animatedMasks = rawData.mask.map((val, index) => (
         <Motion
             key={index}
             defaultStyle={{offset: 100}}
-            style={{offset: currentStroke >= index ? spring(0) : spring(100)}}
+            style={{offset: currentStroke >= index ? spring(0, rawData.springConfig[index]) : spring(100, rawData.springConfig[index])}}
             onRest={() => currentStroke === index ? setCurrentStroke(index + 1) : undefined}
         >
             {

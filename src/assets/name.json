@@ -59,6 +59,26 @@
         10.10000038,
         11.6
     ],
+    "springConfig": [
+        {"stiffness": 400, "damping": 32},
+        {"stiffness": 400, "damping": 32},
+        {"stiffness": 400, "damping": 32},
+        {"stiffness": 400, "damping": 32},
+        {"stiffness": 400, "damping": 32},
+        {"stiffness": 400, "damping": 32},
+        {"stiffness": 400, "damping": 32},
+        {"stiffness": 400, "damping": 32},
+        {"stiffness": 350, "damping": 32},
+        {"stiffness": 350, "damping": 32},
+        {"stiffness": 400, "damping": 32},
+        {"stiffness": 400, "damping": 32},
+        {"stiffness": 400, "damping": 32},
+        {"stiffness": 400, "damping": 32},
+        {"stiffness": 400, "damping": 32},
+        {"stiffness": 400, "damping": 32},
+        {"stiffness": 400, "damping": 32},
+        {"stiffness": 400, "damping": 32}
+    ],
     "clipping": {
         "stroke7": [
             {
